@@ -1,0 +1,75 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_tea_farming_tips
+  - ask_pest_control
+  - ask_weather_update
+  - ask_fertilizer_advice
+  - ask_harvesting_tips
+  - ask_tea_diseases
+  - ask_about_tea
+  - types_of_tea
+  - brew_tea
+  - health_benefits
+  - ask_tea_history
+  - ask_tea_culture
+  - ask_tea_temperature
+  - ask_caffeine_content
+  - ask_reuse_tea_leaves
+  - ask_matcha_tea
+  - ask_black_vs_green_tea
+  - ask_herbal_tea
+  - ask_chai_tea
+  - ask_oolong_tea
+  - ask_white_tea
+  - ask_pu_erh_tea
+  - ask_best_time_for_tea
+  - ask_tea_during_pregnancy
+  - ask_loose_leaf_vs_tea_bags
+  - ask_tea_storage
+  - ask_caffeine_in_herbal_tea
+  - ask_rooibos_tea
+  - ask_tea_for_weight_loss
+  - ask_tea_for_relaxation
+  - ask_tea_for_digestion
+  - ask_tea_for_colds
+  - ask_tea_for_energy
+  - ask_tea_for_sleep
+  - out_of_scope  # Fallback intent for unknown queries
+
+responses:
+  utter_greet:
+    - text: "Hello! Welcome to TeaSmart. How can I assist you with tea today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a Nice time."
+
+  utter_iamabot:
+    - text: "I am TeaBot, your Personal Virtual Assistant, here to help you with all your tea-related queries. If you have any questions, feel free to ask!"
+
+  utter_out_of_scope:
+    - text: "Sorry,  I didn't quite understand that. Please rephrase your question or provide more details. I'm here to help?"
+
+  utter_happy:
+    - text: "That's great! Let me know if you need more help."
+
+  utter_cheer_up:
+    - text: "Don't worry! Here is something to brighten your day:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that information help you?"
+
+actions:
+  - action_query_knowledge_base  # Custom action to query the knowledge base
+
+session_config:
+  session_expiration_time: 0  # No session expiration (conversation continues indefinitely)
+  carry_over_slots_to_new_session: true  # Carry over slots to the next session

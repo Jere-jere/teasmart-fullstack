@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: node:18
+    working_dir: /app
+    volumes:
+      - ./teasmart-frontend:/app
+    ports:
+      - "3000:3000"
+    command: sh -c "npm install && npm start"
+    depends_on:
+      - backend
+      - mysql
+
+  backend:
+    image: node:18
+    working_dir: /app
+    volumes:
+      - ./teasmart-backend:/app
+    ports:
+      - "5000:5000"
+    environment:
+      DB_HOST: mysql
+    command: sh -c "npm install && npm start"
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: teasmart
+      MYSQL_DATABASE: teasmart_db
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  rasa:
+    image: rasa/rasa:3.8.0
+    volumes:
+      - ./rasa_bot:/app
+    ports:
+      - "5005:5005"
+    command: ["run", "--enable-api"]
+
+volumes:
+  mysql_data:

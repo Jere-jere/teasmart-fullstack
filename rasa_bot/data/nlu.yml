@@ -1,0 +1,180 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - what's up
+    - howdy
+    - hi there
+    - greetings
+    - hey dude
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - take care
+    - see you soon
+    - farewell
+    - have a nice day
+    - later
+    - bye bye
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - sure
+    - absolutely
+    - correct
+    - exactly
+    - that's right
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - not really
+    - nope
+    - no way
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling awesome
+    - wonderful
+    - I'm feeling very good
+    - I am great
+    - super stoked
+    - so good
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - not good
+    - not happy
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - who made you?
+    - can you think?
+
+- intent: ask_tea_farming_tips
+  examples: |
+    - How do I grow tea plants?
+    - What are the best practices for tea farming?
+    - Can you give me some tea farming tips?
+    - How can I improve my tea yield?
+    - Best soil conditions for tea farming?
+
+- intent: ask_pest_control
+  examples: |
+    - How do I protect my tea plants from pests?
+    - What are common tea pests?
+    - How do I get rid of aphids in my tea farm?
+    - Can I use organic pesticides on tea?
+    - Best pest control methods for tea farming?
+
+- intent: ask_weather_update
+  examples: |
+    - What's the weather like today?
+    - Will it rain tomorrow?
+    - Can I get a weather update for my farm?
+    - Is it going to be sunny this week?
+    - Weather forecast for tea farming?
+
+- intent: ask_fertilizer_advice
+  examples: |
+    - What fertilizer should I use for tea?
+    - How often should I apply fertilizer to my tea plants?
+    - Best fertilizers for tea farming?
+    - Can I use organic manure for tea plants?
+    - NPK ratio for tea cultivation?
+
+- intent: ask_harvesting_tips
+  examples: |
+    - When should I harvest tea leaves?
+    - How do I know when tea is ready for harvest?
+    - Best harvesting techniques for tea?
+    - Should I hand-pluck or use a machine for tea harvesting?
+
+- intent: ask_tea_diseases
+  examples: |
+    - What are common tea diseases?
+    - How do I treat Blister Blight in tea plants?
+    - My tea leaves have spots, what should I do?
+    - How do I prevent Root Rot in tea farming?
+    - Can you help me identify a tea plant disease?
+
+# New intents for tea (the beverage)
+- intent: ask_about_tea
+  examples: |
+    - What is tea?
+    - Tell me about tea
+    - Explain tea
+    - What are the benefits of tea?
+    - What is tea made of?
+    - Can you tell me about tea?
+
+- intent: types_of_tea
+  examples: |
+    - What are the different types of tea?
+    - List the types of tea
+    - What kinds of tea are there?
+    - Name some tea varieties
+    - What types of tea can I drink?
+
+- intent: brew_tea
+  examples: |
+    - How do I brew tea?
+    - What is the best way to make tea?
+    - How to prepare tea?
+    - Tea brewing instructions
+    - Can you teach me how to make tea?
+
+- intent: health_benefits
+  examples: |
+    - What are the health benefits of tea?
+    - Is tea good for health?
+    - Does tea help with weight loss?
+    - Benefits of drinking tea
+    - Is tea good for digestion?
+
+- intent: ask_tea_history
+  examples: |
+    - What is the history of tea?
+    - Where did tea originate?
+    - How did tea become popular?
+    - Tell me about the origins of tea
+    - Who discovered tea?
+
+- intent: ask_tea_culture
+  examples: |
+    - What is tea culture?
+    - How is tea used in different cultures?
+    - Tell me about tea ceremonies
+    - What is the significance of tea in Japan?
+    - How do British people drink tea?

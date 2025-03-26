@@ -1,0 +1,110 @@
+[
+    {
+      "question": "What is tea?",
+      "answer": "Tea is a popular beverage made by steeping the leaves of the Camellia sinensis plant in hot water. It is known for its refreshing taste and health benefits."
+    },
+    {
+      "question": "How do I brew tea?",
+      "answer": "To brew tea, boil water and pour it over tea leaves or a tea bag. Let it steep for 2-5 minutes, depending on the type of tea. Remove the leaves or bag and enjoy!"
+    },
+    {
+      "question": "What are the types of tea?",
+      "answer": "There are several types of tea, including green tea, black tea, oolong tea, white tea, and herbal teas like chamomile and peppermint."
+    },
+    {
+      "question": "What are the health benefits of tea?",
+      "answer": "Tea is rich in antioxidants and has many health benefits, such as improving heart health, aiding digestion, and boosting the immune system."
+    },
+    {
+      "question": "What is the history of tea?",
+      "answer": "Tea originated in ancient China over 5,000 years ago. It was initially used as a medicinal drink and later became a popular beverage worldwide."
+    },
+    {
+      "question": "What is the best temperature for brewing green tea?",
+      "answer": "The best temperature for brewing green tea is around 175°F (80°C)."
+    },
+    {
+      "question": "How much caffeine is in tea?",
+      "answer": "The caffeine content in tea varies by type. On average, black tea has about 40-70 mg per cup, while green tea has about 20-45 mg per cup."
+    },
+    {
+      "question": "Can I reuse tea leaves?",
+      "answer": "Yes, you can reuse tea leaves, especially high-quality loose-leaf tea. However, the flavor may be weaker in subsequent brews."
+    },
+    {
+      "question": "What is matcha tea?",
+      "answer": "Matcha is a type of green tea made from finely ground green tea leaves. It is traditionally used in Japanese tea ceremonies and is known for its vibrant green color and health benefits."
+    },
+    {
+      "question": "What is the difference between black tea and green tea?",
+      "answer": "Black tea is fully oxidized, giving it a stronger flavor and darker color. Green tea is unoxidized, preserving its natural green color and lighter, fresher taste."
+    },
+    {
+      "question": "What is herbal tea?",
+      "answer": "Herbal tea, also known as tisane, is not made from the Camellia sinensis plant. Instead, it is made from herbs, spices, flowers, or fruits, such as chamomile, peppermint, or hibiscus."
+    },
+    {
+      "question": "What is chai tea?",
+      "answer": "Chai tea is a spiced tea made with black tea, milk, and a blend of spices like cardamom, cinnamon, ginger, and cloves. It is popular in India and is often sweetened with sugar or honey."
+    },
+    {
+      "question": "What is oolong tea?",
+      "answer": "Oolong tea is a partially oxidized tea that falls between green tea and black tea in terms of flavor and color. It is known for its complex taste and aroma."
+    },
+    {
+      "question": "What is white tea?",
+      "answer": "White tea is the least processed type of tea, made from young tea leaves and buds. It has a delicate flavor and is known for its high antioxidant content."
+    },
+    {
+      "question": "What is pu-erh tea?",
+      "answer": "Pu-erh tea is a fermented tea from China that is aged over time. It has a rich, earthy flavor and is often compressed into cakes or bricks."
+    },
+    {
+      "question": "What is the best time to drink tea?",
+      "answer": "The best time to drink tea depends on the type. Green tea is great in the morning, while herbal teas like chamomile are ideal before bed."
+    },
+    {
+      "question": "Can I drink tea while pregnant?",
+      "answer": "Moderate consumption of caffeine-free herbal teas like ginger or peppermint is generally safe during pregnancy. However, consult your doctor for personalized advice."
+    },
+    {
+      "question": "What is the difference between loose-leaf tea and tea bags?",
+      "answer": "Loose-leaf tea is made from whole or large pieces of tea leaves, offering better flavor and quality. Tea bags typically contain smaller, broken leaves or dust."
+    },
+    {
+      "question": "How do I store tea?",
+      "answer": "Store tea in an airtight container away from light, heat, and moisture. Avoid storing it near strong-smelling foods, as tea can absorb odors."
+    },
+    {
+      "question": "What is the caffeine content in herbal tea?",
+      "answer": "Most herbal teas are naturally caffeine-free, as they are not made from the Camellia sinensis plant. Examples include chamomile, peppermint, and rooibos."
+    },
+    {
+      "question": "What is rooibos tea?",
+      "answer": "Rooibos tea, also known as red bush tea, is a caffeine-free herbal tea from South Africa. It has a sweet, nutty flavor and is rich in antioxidants."
+    },
+    {
+      "question": "What is the best tea for weight loss?",
+      "answer": "Green tea and oolong tea are often recommended for weight loss due to their metabolism-boosting properties. However, a balanced diet and exercise are key."
+    },
+    {
+      "question": "What is the best tea for relaxation?",
+      "answer": "Herbal teas like chamomile, lavender, and peppermint are known for their calming properties and are great for relaxation."
+    },
+    {
+      "question": "What is the best tea for digestion?",
+      "answer": "Peppermint tea, ginger tea, and fennel tea are excellent for aiding digestion and relieving stomach discomfort."
+    },
+    {
+      "question": "What is the best tea for colds?",
+      "answer": "Ginger tea, lemon tea, and echinacea tea are great for soothing cold symptoms and boosting the immune system."
+    },
+    {
+      "question": "What is the best tea for energy?",
+      "answer": "Black tea and matcha tea are great for boosting energy due to their caffeine content. Matcha also provides sustained energy without the crash."
+    },
+    {
+      "question": "What is the best tea for sleep?",
+      "answer": "Chamomile tea and valerian root tea are known for their sleep-inducing properties and are ideal for bedtime."
+    }
+  ]
