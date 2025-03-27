@@ -8,8 +8,19 @@
     "vscode": {
       "extensions": [
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode", 
-        "mui-material.mui-data-grid"
+        "esbenp.prettier-vscode",
+        "mui-material.mui-data-grid",
+        "dsznajder.es7-react-js-snippets", 
+        "vscodeshift.material-ui-snippets",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "humao.rest-client",
+        "rangav.vscode-thunder-client",
+        "mtxr.sqltools",
+        "rasahq.vscode-rasa",
+        "redhat.vscode-yaml",
+        "ms-azuretools.vscode-docker",
+        "github.codespaces"
       ],
       "settings": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
