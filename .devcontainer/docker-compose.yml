@@ -2,18 +2,27 @@ version: '3.8'
 
 services:
   frontend:
+    container_name: teasmart-frontend
     image: node:18
     working_dir: /app
     volumes:
       - ./teasmart-frontend:/app
     ports:
       - "3000:3000"
+    environment:
+      NODE_ENV: development
+      CHOKIDAR_USEPOLLING: "true"  # Helps with file watching in Docker
     command: sh -c "npm install && npm start"
     depends_on:
-      - backend
-      - mysql
+      backend:
+        condition: service_healthy
+      mysql:
+        condition: service_healthy
+    networks:
+      - teasmart-network
 
   backend:
+    container_name: teasmart-backend
     image: node:18
     working_dir: /app
     volumes:
@@ -21,26 +30,54 @@ services:
     ports:
       - "5000:5000"
     environment:
+      NODE_ENV: development
       DB_HOST: mysql
+      DB_USER: root
+      DB_PASSWORD: teasmart
+      DB_NAME: teasmart_db
     command: sh -c "npm install && npm start"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - teasmart-network
 
   mysql:
+    container_name: teasmart-mysql
     image: mysql:8.0
     environment:
       MYSQL_ROOT_PASSWORD: teasmart
       MYSQL_DATABASE: teasmart_db
+      MYSQL_ROOT_HOST: "%"
     ports:
       - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 10s
+      retries: 5
+    networks:
+      - teasmart-network
 
   rasa:
-    image: rasa/rasa:3.7.4 # Updated to a valid version
+    container_name: teasmart-rasa
+    image: rasa/rasa:3.6.21-full  # Verified working version
     volumes:
       - ./rasa_bot:/app
     ports:
       - "5005:5005"
     command: ["run", "--enable-api"]
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - teasmart-network
 
 volumes:
   mysql_data:
+
+networks:
+  teasmart-network:
+    driver: bridge
