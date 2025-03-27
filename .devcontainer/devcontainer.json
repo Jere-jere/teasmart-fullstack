@@ -4,13 +4,14 @@
   "service": "frontend",
   "workspaceFolder": "/workspace",
   "shutdownAction": "stopCompose",
+  "remoteUser": "node",  // Added for consistent permissions
   "customizations": {
     "vscode": {
       "extensions": [
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "mui-material.mui-data-grid",
-        "dsznajder.es7-react-js-snippets", 
+        "dsznajder.es7-react-js-snippets",
         "vscodeshift.material-ui-snippets",
         "ms-python.python",
         "ms-python.vscode-pylance",
@@ -24,10 +25,18 @@
       ],
       "settings": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,  // Added for consistency
+        "files.autoSave": "afterDelay"  // Added for better DX
       }
     }
   },
   "forwardPorts": [3000, 5000, 5005, 3306],
-  "postCreateCommand": "npm --prefix ../teasmart-frontend install && npm --prefix ../teasmart-backend install"
+  "postCreateCommand": "npm --prefix ./teasmart-frontend install && npm --prefix ./teasmart-backend install",
+  "waitFor": "onCreateCommand",  // Added to ensure dependencies are installed
+  "mounts": [  // Added explicit mounts for clarity
+    "source=${localWorkspaceFolder}/teasmart-frontend,target=/workspace/teasmart-frontend,type=bind",
+    "source=${localWorkspaceFolder}/teasmart-backend,target=/workspace/teasmart-backend,type=bind",
+    "source=${localWorkspaceFolder}/rasa_bot,target=/workspace/rasa_bot,type=bind"
+  ]
 }
